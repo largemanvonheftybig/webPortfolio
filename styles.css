@@ -26,3 +26,7 @@ nav {
     font-style: italic;
     text-align: center;
 }
+
+#emailButton{
+    margin-left: auto;
+}

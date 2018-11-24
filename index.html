@@ -12,6 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/poo8geu.css">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -22,6 +23,7 @@
             <a class="nav-link" href="#">Projects</a>
             <a class="nav-link" href="#">About</a>
             <a class="nav-link " href="#">Contact</a>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" id = "emailButton">Email Me!</button>
         </nav>
         <div class="jumbotron">
 
@@ -110,48 +112,45 @@
                 <img src="hglogo.png" class="logos">
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Email Me!</button>
-                <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Email Contact Form</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class = "row">
-                                <h1>Shoot me a message below</h1>
-                                <label>Name</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                               <div class = "row">
-                                <label>Your Email</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                                </div>
- 
-                                <div class = "row">
-                                <label>Message</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
                 <img src="facebook.png" class="logos">
             </div>
             <div class="col-3">
                 <img src="linkedin.jpg" class="logos">
             </div>
 
+        </div>
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Email Contact Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <h1>Shoot me a message below</h1>
+                            <label>Name</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="row">
+                            <label>Your Email</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+
+                        <div class="row">
+                            <label>Message</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
