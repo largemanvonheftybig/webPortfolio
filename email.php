@@ -5,7 +5,7 @@
         
         $from = empty(trim($_POST["recipient-email"])) ? "noemail@sample.com" : sanitize_string($_POST["recipient-email"]);
 
-        $subject = "Web Form";
+        $subject = "Portfolio";
 
         $message = empty(trim($_POST["message-text"])) ?  "No message" : sanitize_string($_POST["message-text"]);
 
