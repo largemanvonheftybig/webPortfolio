@@ -17,7 +17,7 @@ nav {
     text-align: center;
     font-size: 4rem;
     margin: 5% 0;
-    color: rgba(26, 132, 136, 0.82);
+    color: rgb(255, 80, 80);
 }
 
 #subtitle{
@@ -26,6 +26,7 @@ nav {
     font-style: italic;
     text-align: center;
     margin-bottom: 200px;
+    color: rgb(255, 80, 80);
 }
 
 #emailButton{
@@ -46,8 +47,8 @@ nav {
 }
 
 .jumbotron{
-    background-image: url("cow.jpg");
-    background-size: contain;
+    background-image: url("asteroids.PNG");
+    background-size: cover;
 }
 
 #projectText{
@@ -66,12 +67,12 @@ nav {
 }
 
 .logos{
-    margin-left: auto;
+    margin-left: 40%;
 }
 
 #me{
-    margin-left: 50%;
-    border-radius: 30%;
+    margin-left: 70%;
+    border-radius: 5%;
     margin-bottom: 40px;
 }
 
@@ -98,4 +99,8 @@ nav {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+}
+
+.dogCard{
+    margin-left: 22%;
 }

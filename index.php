@@ -143,16 +143,16 @@
                         <div class="row">
                             <h1>Shoot me a message below</h1>
                             <label>Name</label>
-                            <input type="text" name ="recipient-name" class="form-control"  id = "recipient-name">
+                            <input type="text" class="form-control" name ="recipient-name" id = "recipient-name">
                         </div>
                         <div class="row">
                             <label>Your Email</label>
-                            <input type="text" name ="recipient-email" class="form-control"  id = "recipient-email">
+                            <input type="text" class="form-control" name ="recipient-email" id = "recipient-email">
                         </div>
 
                         <div class="row">
                             <label>Message</label>
-                            <input class="form-control"  name="message-text" id = "message-text"></textarea>
+                            <textarea class="form-control"  name="message-text" id = "message-text"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -167,7 +167,27 @@
     </div>
     <!--end container-->
 
-    
+    <?php
+    if(isset($_POST["submit"]))
+    {
+        $to = "oek8462@g.rit.edu";
+        
+        $from = empty(trim($_POST["recipient-email"])) ? "noemail@sample.com" : sanitize_string($_POST["recipient-email"]);
+
+        $subject = "Web Form";
+
+        $message = empty(trim($_POST["message-text"])) ?  "No message" : sanitize_string($_POST["message-text"]);
+
+        $name = empty(trim($_POST["recipient-name"])) ? "No name" : sanitize_string($_POST["recipient-name"]);
+
+        $sent = mail($to,$subject,$message,$headers);
+        if ($sent){
+            echo "<p><b>You sent:</b> $message</p>";
+        }else{
+            echo "<p>Mail not sent!</p>";
+        }
+    }
+    ?>
 
 
 
