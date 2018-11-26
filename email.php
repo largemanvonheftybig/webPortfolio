@@ -3,21 +3,32 @@
     {
         $to = "oek8462@rit.edu";
         
-        $from = empty(trim($_POST["recipient-email"])) ? "noemail@sample.com" : sanitize_string($_POST["recipient-email"]);
+        $from = empty(trim($_POST["email"])) ? "noemail@sample.com" : sanitize_string($_POST["email"]);
 
         $subject = "Portfolio";
 
-        $message = empty(trim($_POST["message-text"])) ?  "No message" : sanitize_string($_POST["message-text"]);
+        $message = empty(trim($_POST["text"])) ?  "No message" : sanitize_string($_POST["text"]);
 
-        $name = empty(trim($_POST["recipient-name"])) ? "No name" : sanitize_string($_POST["recipient-name"]);
+        $name = empty(trim($_POST["name"])) ? "No name" : sanitize_string($_POST["name"]);
+
         
-        $human = empty(trim($_POST["human"])) ? "0" : sanitize_string($_POST["human"]);
 
         $headers = "From: $from" . "\r\n";
-        if (intval($human) == 4){
-
-        $sent = mail($to,$subject,$message,$headers);
-        }
+    
         
+        $sent = mail($to,$subject,$message,$headers);
+        if ($sent){
+            echo "<p><b>You sent:</b> $message</p>";
+        }
+        else{
+            echo "<p>Mail not sent!</p>";
+        }
+    
     }
-    ?>
+        
+        function sanitize_string($string){
+            $string = trim($string);
+            $string = strip_tags($string);
+            return $string;
+    }
+?>  
