@@ -19,17 +19,17 @@
     <div class="container-fluid">
 
         <nav class="nav sticky-top" role="navigation">
-            <a class="nav-link active" href="#">Owen King</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link " href="#">Contact</a>
-            <a class="nav-link " href="#">Resume</a>
+            <a class="nav-link active" href="#title">Owen King</a>
+            <a class="nav-link" href="#projectText">Projects</a>
+            <a class="nav-link" href="#aboutMeText">About</a>
+            <a class="nav-link " href="#contactText">Contact</a>
+            <a class="nav-link " href="kingResume">Resume</a>
             <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" id="emailButton">Email Me!</button>
         </nav>
         <div class="jumbotron">
 
             <h1 id="title">Owen King</h1>
-            <h2 id="subtitle">Game Design Student</h2>
+            <h2 id="subtitle">Game Designer, Ever Improving</h2>
 
         </div>
         <div class="row">
@@ -38,7 +38,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-4 col-sm-12">
+
                 <div class="card" style="width: 90%;">
                     <img class="card-img-top" src="johnamerica menu.PNG" alt="Card image cap">
                     <div class="card-body">
@@ -49,11 +50,13 @@
                             shooting and weapon types. Along with this design, I also coded enemy spawns, and weapon mechanics
                             span spawning.
                         </p>
-                        <a href="www.lingscars.com" class="jabroniButton">View Project On GitHub</a>
+                        <a href="https://github.com/largemanvonheftybig/John-America-" class="jabroniButton">View Project On GitHub</a>
                     </div>
                 </div>
+
             </div>
-            <div class="col-6">
+            <div class="col-lg-4 col-sm-12">
+
                 <div class="card" style="width: 90%;">
                     <img class="card-img-top" src="asteroids.PNG" alt="Card image cap">
                     <div class="card-body">
@@ -63,27 +66,28 @@
                             project, i added a boss asteroid enemy to my game as a way to create a unique experience with
                             the already classic asteroids.
                         </p>
-                        <a href="#" class="jabroniButton">View Project On GitHub</a>
+                        <a href="https://github.com/largemanvonheftybig/Asteroids" class="asteroidButton">View Project On GitHub</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="dogCard">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card" style="width: 60%;">
-                        <img class="card-img-top" src="dogapi.PNG" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Dog Finder</h5>
-                            <p class="card-text">A web project in which I was tasked to create a online media app using an API this project helped
-                                me further my skills in javascript and API coding. Also, this project introduced me to HTML
-                                and CSS libraries such as skeleton. 
-                            </p>
-                            <a href = "https://people.rit.edu/~oek8462/230/proj2/project2.html">View the dog finder here</a>
-                        </div>
+
+
+
+
+            <div class="col-lg-4 col-sm-12">
+                <div class="card" style="width: 90%;">
+                    <img class="card-img-top" src="dogapi.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog Finder</h5>
+                        <p class="card-text">A web project in which I was tasked to create a online media app using an API this project helped
+                            me further my skills in javascript and API coding. Also, this project introduced me to HTML and
+                            CSS libraries such as skeleton.
+                        </p>
+                        <a href="https://people.rit.edu/~oek8462/230/proj2/project2.html">View the dog finder here</a>
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="aboutMeTitle">
             <div class="row">
@@ -94,21 +98,23 @@
         </div>
         <div class="aboutRow">
             <div class="row">
-                <div class="col-6">
-                    <img id="me" src="me.jpg">
-                </div>
-                <div class="col-6">
+                
+                    <div class="col-sm-6 col-12">
+                        <img class="rounded mx-auto d-block" id="me" src="me.jpg">
+                    </div>
+                
+                <div class="col-sm-6 col-12">
                     <p id="bioText">My Name is Owen King and I am currently studying game design and Development at RIT. Ive always had an
                         interest in video games and I came to rit to fully apply myself to a career in video games and code.
-                        I enjoy making interactive programs and games that I think I myself woud enjoy. On this site you
-                        can find some examples of my past work along with contact information.
+                        I enjoy making interactive programs and games that I think I myself woud enjoy. On this
+                        site you can find some examples of my past work along with contact information.
                     </p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 id="contactText">Contact Me</h2>
+                <h2 id="contactText">Contact Links</h2>
             </div>
         </div>
 
@@ -116,17 +122,17 @@
 
             <div class="col-4">
                 <a href="https://github.com/largemanvonheftybig">
-                <img class="logos" src="hglogo.png">
+                <img class="rounded mx-auto d-block" src="hglogo.png">
                 </a>
             </div>
             <div class="col-4">
                 <a href="https://www.facebook.com/owen.king.39501">
-                <img class="logos" src="facebook.png">
+                <img class="rounded mx-auto d-block" src="facebook.png">
                 </a>
             </div>
             <div class="col-4">
                 <a href="https://www.linkedin.com/in/owen-king-945547172/">
-                <img class="logos" src="linkedin.jpg">
+                <img class="rounded mx-auto d-block" src="linkedin.jpg">
                 </a>
             </div>
 
@@ -157,12 +163,12 @@
                                 <label>Message</label>
                                 <input name="message" type="text" class="form-control" id="message-text">
                             </div>
-                            
+
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <input type="submit" class="btn btn-primary" id="submit" name="submit" >
+                            <input type="submit" class="btn btn-primary" id="submit" name="submit">
                         </div>
                     </form>
                 </div>
